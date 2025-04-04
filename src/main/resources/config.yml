@@ -1,0 +1,43 @@
+allowed-worlds: # Set enabled worlds.
+  - world
+  - world_nether
+  - world_the_end
+
+economy:
+  enable-activation-cost: true # Enable /fly actication cost.
+  cost-per-activation: 10.0 # Cost per /fly activation.
+  enable-interval-cost: true # Enable interval cost.
+  cost-per-interval: 5.0 # Cost per interval.
+  charge-interval-seconds: 60 # Charge interval in Seconds.
+  enable-speed-cost: true # Enable a cost for the /flyspeed command.
+  cost-per-speed-change: 2.0 # Cost per /flyspeed command.
+
+discount-classes: # Set a discount in percent. Discount Permissions are nightspace.fly.discount.<class>
+  vip:
+    discount: 20
+  premium:
+    discount: 50
+
+flyspeed:
+  min: 0.0 # Set the minimal Fly Speed.
+  max: 1.0 # Set the maximal Fly Speed.
+
+messages:
+  use-prefix: true  # Set to false to disable prefix in front of messages
+  prefix: "&7[&fNightspaceFly&7]"  # Only applied to messages if use-prefix is true
+  no-permission: "&cYou don't have permission to use this command."
+  flight-enabled-free: "&fFlight enabled for free."
+  flight-enabled-paid: "&fFlight enabled for ${cost}."
+  flight-disabled: "&cFlight disabled."
+  flight-enabled-free-for: "&fFlight enabled for {player} for free."
+  flight-enabled-paid-for: "&fFlight enabled for {player} for ${cost}."
+  flight-disabled-for: "&cFlight disabled for {player}."
+  not-enough-money: "&cYou need ${cost} to enable flight."
+  economy-not-set-up: "&cEconomy is not set up. You need the free permission to proceed."
+  cannot-use-in-gamemode: "&cCannot use flight in this game mode for {player}."
+  flight-not-allowed-in-world: "&cFlight is not allowed in this world for {player}."
+  flyspeed-set: "&fFly speed set to {speed}."
+  flyspeed-set-paid: "&fFly speed set to {speed} for ${cost}."
+  flight-disabled-no-money: "&cFlight disabled due to insufficient funds."
+  flight-interval-charged: "&fCharged ${cost} for flight interval."
+  reload-success: "&aConfiguration reloaded successfully."

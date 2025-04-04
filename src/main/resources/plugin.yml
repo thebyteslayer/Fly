@@ -1,0 +1,35 @@
+name: NightspaceFly
+version: 1.0
+main: net.byteslayer.nightspacefly.NightspaceFly
+author: ByteSlayer
+api-version: 1.21
+softdepend: [Vault]
+commands:
+  fly:
+    description: Toggle flight
+    usage: /fly [player]
+  flyspeed:
+    description: Set flight speed
+    usage: /flyspeed <speed>
+  nightspacefly:
+    description: Manage NightspaceFly plugin
+    usage: /nightspacefly <reload>
+permissions:
+  nightspace.fly.use:
+    description: Allows use of the fly command for self
+    default: op
+  nightspace.fly.others:
+    description: Allows use of the fly command for others
+    default: op
+  nightspace.fly.speed:
+    description: Allows use of the flyspeed command
+    default: op
+  nightspace.fly.free:
+    description: Allows free flight without economy cost
+    default: op
+  nightspace.fly.speed.free:
+    description: Allows free flight speed changes without economy cost
+    default: op
+  nightspace.fly.reload:
+    description: Allows reloading the plugin configuration
+    default: op
