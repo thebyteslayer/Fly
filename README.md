@@ -1,2 +1,2 @@
 # NightspaceFly
-The most advanced FlyPlugin that exists.
+The most powerful FlyPlugin that exists.
