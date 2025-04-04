@@ -1,2 +1,2 @@
-# AdvancedFly
-A simple but advanced Fly Plugin.
+# Fly
+The most advanced FlyPlugin that exists.
